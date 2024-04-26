@@ -24,5 +24,9 @@ module counter::counter {
         c.val = c.val - 1
     }
 
+    public fun val(c: &Counter) :u64 {
+        c.val
+    }
+
 }
 
