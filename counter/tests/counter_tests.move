@@ -24,7 +24,7 @@ module counter::counter_tests {
 
     #[test]
     fun test_increment() {
-         let user  = @0x12e4;
+        let user  = @0x12e4;
 
         let mut scenario = test_scenario::begin(user);
         {
@@ -46,7 +46,7 @@ module counter::counter_tests {
 
      #[test, expected_failure(abort_code= counter::ENegativeDecrement)]
     fun test_decrement_fail() {
-         let user  = @0x12e4;
+        let user  = @0x12e4;
 
         let mut scenario = test_scenario::begin(user);
         {
@@ -60,7 +60,7 @@ module counter::counter_tests {
     }
     #[test]
     fun test_decrement() {
-         let user  = @0x12e4;
+        let user  = @0x12e4;
 
         let mut scenario = test_scenario::begin(user);
         {
